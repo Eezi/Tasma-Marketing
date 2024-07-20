@@ -26,6 +26,7 @@ import Title from "../shared/Title.astro";
                 <img
                     src={"/images/stats.jpg"}
                     alt="banner image"
+                    loading="lazy"
                     width="1240"
                     height="1385"
                     class="w-auto left-1/2 rounded-3xl object-cover -translate-x-1/2 absolute bottom-0 max-h-full"
@@ -45,7 +46,7 @@ import Title from "../shared/Title.astro";
                 tehokkuus.
             </Paragraph>
             <div
-                class="pt-8 grid grid-cols-2 items-center gap-4 max-w-3xl md:max-w-[none]"
+                class="pt-8 grid md:grid-cols-2 items-center gap-4 max-w-3xl md:max-w-[none]"
             >
                 <Info
                     description="Tarjoamme parempaa ja täsmällisempää markkinointia, jolla saadaan enemmän hyötyä irti vähemmällä."

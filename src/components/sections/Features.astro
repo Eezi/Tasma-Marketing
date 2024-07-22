@@ -1,47 +1,64 @@
 ---
+import { Image } from "astro:assets";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 ---
 
 <section id="features">
-    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
+    <Container className="flex justify-center items-center">
         <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
             <Title> Tarjoamamme palvelut </Title>
-            <Paragraph className="mt-8">
-                Valikoimaamme kuuluvat monipuolisesti erilaiset
-                markkinointipalvelut. Mille osa-alueelle yrityksesi
-                tarvitseekaan tukea, Täsmä Markkinointi on apunasi.
+            <Paragraph className="mt-8 max-w-[60ch]">
+                Tarjoamme aina tapauskohtaisesti suunniteltuja
+                markkinointiratkaisuja, jotka olemme räätälöineet juuri teidän
+                tarpeisiinne ja budjettiinne istuviksi. <br />
+                <br /> Valikoimaamme kuuluvat monipuolisesti erilaiset markkinointipalvelut.
+                Mille osa-alueelle yrityksesi tarvitseekaan tukea, Täsmä Markkinointi
+                on apunasi.
             </Paragraph>
-            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+            <ul class="mt-8 space-y-4 text-heading-2 font-semibold">
                 <li>
                     <span
                         class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
                         >&checkmark;</span
-                    > Lorem ipsum, dolor sit amet
+                    > Digimarkkinointi
                 </li>
                 <li>
                     <span
                         class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
                         >&checkmark;</span
-                    > Lorem ipsum, dolor.
+                    > Fyysinen markkinointi
                 </li>
                 <li>
                     <span
                         class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
                         >&checkmark;</span
-                    > Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    > Some-tilien ylläpitäminen ja päivittäminen
                 </li>
                 <li>
                     <span
                         class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
                         >&checkmark;</span
-                    > Lorem ipsum, dolor.
+                    > Hakukone- (SEO) ja verkkosivujen optimointi
+                </li>
+                <li>
+                    <span
+                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                        >&checkmark;</span
+                    > Markkinointistrategia
+                </li>
+                <li>
+                    <span
+                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                        >&checkmark;</span
+                    > Liiketoiminnan optimointi
                 </li>
             </ul>
         </div>
 
-        <div
+        {
+            /* <div
             class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto"
         >
             <div class="w-full h-80 sm:h-96 midmd:h-full relative">
@@ -57,14 +74,16 @@ import Title from "../shared/Title.astro";
                 <span
                     class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"
                 ></span>
-                <img
+                <Image
                     src={"/images/dev-with-c.webp"}
                     alt="banner image"
-                    width="1240"
-                    height="1385"
+                    width="320"
+                    loading="lazy"
+                    height="340"
                     class="w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full"
                 />
             </div>
-        </div>
+        </div> */
+        }
     </Container>
 </section>

@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Button from "../shared/Button.astro";
+import ButtonLink from "../shared/BtnLink.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import ByNumber from "./ByNumber.astro";
@@ -50,11 +51,12 @@ import ByNumber from "./ByNumber.astro";
                     >
                     </form> */
                     }
-                    <Button
+                    <ButtonLink
                         variant={"primary"}
+                        href="#cta"
+                        text="Ota yhteyttä"
                         className={"min-w-max text-white"}
                     >
-                        <span class="relative z-[5]"> Ota yhteyttä </span>
                         {
                             /* <span class="flex sm:hidden relative z-[5]">
                             <svg
@@ -73,7 +75,7 @@ import ByNumber from "./ByNumber.astro";
                             </svg>
                         </span> */
                         }
-                    </Button>
+                    </ButtonLink>
                 </div>
             </div>
         </div>

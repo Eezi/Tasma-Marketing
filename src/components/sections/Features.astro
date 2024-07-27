@@ -6,7 +6,7 @@ import Title from "../shared/Title.astro";
 ---
 
 <section id="features">
-    <Container className="flex justify-center items-center">
+    <Container className="flex justify-center items-center relative w-fit">
         <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
             <Title> Tarjoamamme palvelut </Title>
             <Paragraph className="mt-8 max-w-[60ch]">
@@ -17,48 +17,85 @@ import Title from "../shared/Title.astro";
                 Mille osa-alueelle yrityksesi tarvitseekaan tukea, Täsmä Markkinointi
                 on apunasi.
             </Paragraph>
-            <ul class="mt-8 space-y-4 text-heading-2 font-semibold">
-                <li>
+            <div
+                class="absolute -right-32 top-0 h-full w-full flex justify-end"
+            >
+                <div
+                    class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl"
+                >
                     <span
-                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
-                        >&checkmark;</span
-                    > Digimarkkinointi
-                </li>
-                <li>
+                        class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+                    ></span>
                     <span
-                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
-                        >&checkmark;</span
-                    > Fyysinen markkinointi
-                </li>
-                <li>
+                        class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+                    ></span>
                     <span
-                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
-                        >&checkmark;</span
-                    > Some-tilien ylläpitäminen ja päivittäminen
-                </li>
-                <li>
-                    <span
-                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
-                        >&checkmark;</span
-                    > Hakukone- (SEO) ja verkkosivujen optimointi
-                </li>
-                <li>
-                    <span
-                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
-                        >&checkmark;</span
-                    > Markkinointistrategia
-                </li>
-                <li>
-                    <span
-                        class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
-                        >&checkmark;</span
-                    > Liiketoiminnan optimointi
-                </li>
-            </ul>
-        </div>
+                        class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+                    ></span>
+                </div>
+            </div>
 
-        {
-            /* <div
+            <div
+                class="absolute -left-52 bottom-0 h-full w-full flex items-end"
+            >
+                <div
+                    class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl"
+                >
+                    <span
+                        class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+                    ></span>
+                    <span
+                        class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+                    ></span>
+                    <span
+                        class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+                    ></span>
+                </div>
+            </div>
+            <span class="text-xl text-primary mt-2 font-medium"
+                >Hinta alkaen 499 + alv / kk<span>
+                    <ul class="mt-8 space-y-4 text-heading-2 font-semibold">
+                        <li>
+                            <span
+                                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                                >&checkmark;</span
+                            > Digimarkkinointi
+                        </li>
+                        <li>
+                            <span
+                                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                                >&checkmark;</span
+                            > Fyysinen markkinointi
+                        </li>
+                        <li>
+                            <span
+                                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                                >&checkmark;</span
+                            > Some-tilien ylläpitäminen ja päivittäminen
+                        </li>
+                        <li>
+                            <span
+                                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                                >&checkmark;</span
+                            > Hakukone- (SEO) ja verkkosivujen optimointi
+                        </li>
+                        <li>
+                            <span
+                                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                                >&checkmark;</span
+                            > Markkinointistrategia
+                        </li>
+                        <li>
+                            <span
+                                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                                >&checkmark;</span
+                            > Liiketoiminnan optimointi
+                        </li>
+                    </ul>
+                </span>
+
+                {
+                    /* <div
             class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto"
         >
             <div class="w-full h-80 sm:h-96 midmd:h-full relative">
@@ -84,6 +121,8 @@ import Title from "../shared/Title.astro";
                 />
             </div>
         </div> */
-        }
+                }
+            </span>
+        </div>
     </Container>
 </section>

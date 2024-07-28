@@ -3,6 +3,7 @@ import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import ContactCard from "../cards/Contact.astro";
+const formsparkKey = import.meta.env.FORMSPARK_PASS;
 ---
 
 <section id="cta" class="pb-20">
@@ -61,8 +62,7 @@ import ContactCard from "../cards/Contact.astro";
                 </h2>
                 <form
                     class="w-full mx-auto max-w-lg pt-10"
-                    action="https://formsubmit.co/abb4ca09024aa2f3b0e5d39539e329c8"
-                    method="POST"
+                    action={`https://submit-form.com/${formsparkKey}`}
                 >
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

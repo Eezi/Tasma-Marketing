@@ -2,6 +2,7 @@
 import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
+import ContactCard from "../cards/Contact.astro";
 ---
 
 <section id="cta" class="pb-20">
@@ -47,11 +48,16 @@ import Paragraph from "../shared/Paragraph.astro";
                 >
                     Aloita nopeasti <span
                         class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-30% via-primary"
-                        >strateginen digitaalinen
-                    </span> markkinointikampanjasi
+                        >digitaalinen markkinointikampanjasi
+                    </span>
                 </h1>
                 <h2 class="pt-10 text-xl text-white font-semibold">
-                    Jätä yhteydenottopyyntö
+                    Laita meille viesti sähköpostilla <a
+                        href="mailto: tasma.markkinointi@gmail.com"
+                        class="text-primary font-medium"
+                        >tasma.markkinointi@gmail.com</a
+                    ><br />
+                    tai jätä yhteydenottopyyntö alla olevalla lomakkeella.
                 </h2>
                 <form
                     class="w-full mx-auto max-w-lg pt-10"
@@ -110,6 +116,23 @@ import Paragraph from "../shared/Paragraph.astro";
                         <span class="text-white relative z-[5]">Lähetä</span>
                     </Button>
                 </form>
+                <h2 class="pt-20 text-xl text-white font-semibold">
+                    Luottohenkilösi Täsmä Markkinoinnissa
+                </h2>
+                <div class="flex justify-center pt-8 gap-8 flex-wrap">
+                    <ContactCard
+                        imgName="vili-face.jpg"
+                        name="Vili Vepsä"
+                        phone="040 9621 636"
+                        color="from-indigo-500 to-orange-500"
+                    />
+                    <ContactCard
+                        imgName="ramon-face.jpg"
+                        name="Ramon Daler"
+                        phone="040 4653 062"
+                        color="from-indigo-500 to-green-500"
+                    />
+                </div>
             </div>
         </div>
     </Container>

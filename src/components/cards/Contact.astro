@@ -16,12 +16,14 @@ const backgroundImg = `/images/${imgName}`;
     class="flex bg-[rgb(var(--color-bg), 0.8)] backdrop-blur flex-col gap-4 text-left rounded-2xl border border-solid border-slate-800 relative shadow-md"
 >
     <div
-        class={`bg-gradient-to-r ${color} from-sky-500 to-indigo-500 h-32 rounded-2xl`}
+        class={`bg-gradient-to-r ${color} from-sky-500 to-indigo-500 h-28 rounded-2xl`}
     >
     </div>
     <img
+        loading="lazy"
+        alt={name}
         src={backgroundImg}
-        class={`absolute w-28 h-28 bg-contain bg-center rounded-full left-[60px] top-16`}
+        class={`absolute object-cover w-28 h-28 rounded-full left-[60px] top-12`}
     />
     <div class="px-9 pb-9">
         <div class="pt-16">

@@ -1,9 +1,8 @@
 ---
 import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
 import ContactCard from "../cards/Contact.astro";
-const formsparkKey = import.meta.env.FORMSPARK_PASS;
+const FORMSPARK_PASS = import.meta.env.FORMSPARK_PASS;
 ---
 
 <section id="cta" class="pb-20">
@@ -47,10 +46,10 @@ const formsparkKey = import.meta.env.FORMSPARK_PASS;
                     class="text-2xl/tight sm:text-4xl/tight md:text-5xl/tight
           font-bold text-heading-1"
                 >
-                Ota askel kohti tehokkaampaa 
+                Ota askel kohti 
                      <span
                         class="text-balance text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-30% via-primary"
-                        >markkinointia
+                        > tehokkaampaa markkinointia
                     </span>
                 </h1>
                 <h2 class="pt-10 text-xl text-white font-semibold">
@@ -63,7 +62,7 @@ const formsparkKey = import.meta.env.FORMSPARK_PASS;
                 </h2>
                 <form
                     class="w-full mx-auto max-w-lg pt-10"
-                    action={`https://submit-form.com/${formsparkKey}`}
+                    action={`https://submit-form.com/${FORMSPARK_PASS}`}
                 >
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
